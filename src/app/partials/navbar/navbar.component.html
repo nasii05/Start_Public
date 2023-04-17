@@ -1,0 +1,33 @@
+<div class="w-[100%] h-20 bg-[#74C69D] flex flex-row items-center ">
+  <img src="../../assets/images/Frame 4logo.png" class="w-20 md:w-24 h-10 ml-10 md:absolute md:left-24 hover:cursor-pointer" alt=""
+  routerLink="home" >
+
+   <a class="absolute right-4 md:hidden">
+    <svg class="w-10 h-10 hover:cursor-pointer stroke-[#ffffff]" (click)="toggle()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+     </svg>
+   </a>
+
+   <div class="invisible md:visible text-white w-96 h-16 absolute right-6
+    flex items-center justify-center">
+      <ul class="flex items-center justify-center gap-4">
+        <li class="hover:text-black"><a routerLink="home">Home</a></li>
+        <li class="hover:text-black"><a routerLink="portfolio">Portfolio</a></li>
+        <li class="hover:text-black"><a routerLink="services">services</a></li>
+        <li class="hover:text-black"><a routerLink="contact">contact</a></li>
+      </ul>
+   </div>
+</div>
+
+<div *ngIf="isShow" class="fixed inset-0 bg-black/25" (click)="toggle()">
+  <div class="bg-slate-200 text-black w-full h-32 relative top-0 md:hidden">
+    <div class="relative right-3 flex flex-col text-gray-500 items-center justify-center">
+      <div class="flex flex-col mt-3">
+        <button class="cursor-pointer hover:text-black" routerLink="home">Home</button>
+        <button class="cursor-pointer hover:text-black" routerLink="portfolio">Portfolio</button>
+        <button class="cursor-pointer hover:text-black" routerLink="services">services</button>
+        <button class="cursor-pointer hover:text-black" routerLink="contact">contact</button>
+      </div>
+    </div>
+  </div>
+</div>

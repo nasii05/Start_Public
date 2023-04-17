@@ -1,0 +1,112 @@
+<div class="w-[100%] h-max bg-[#74C69D]">
+  <div class="w-[100%] h-[34rem] md:h-[30rem] overflow-hidden text-center md:text-start bg-[#74C69D]
+   flex flex-col-reverse justify-center items-center">
+    <div class=" md:absolute md:left-2  md:visible md:w-96 md:h-max
+     text-white md:flex md:flex-col md:ml-32 mt-5 overflow-hidden">
+      <p class=" md:visible text-sm md:text-xl">W E L C O M E</p>
+      <p class=" md:visible mt-2 text-2xl">Lorem Ipsum dolor sit <br> amet consectetur</p>
+      <div class=" w-max">
+        <p class=" md:visible mt-2 mx-auto">
+        Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit.
+        Suscipit nemo hic quos, <br> ab, dolor aperiam nobis cum est eos error <br>
+         ipsum,voluptate culpa nesciunt delectus iste?</p>
+     </div>
+
+        <button class="w-40 h-10 bg-white
+         text-black left-2 bottom-10
+         mt-2 md:mt-4 rounded-sm">
+         Explore
+        </button>
+    </div>
+    <img class="w-80 h-60 md:w-[30rem] md:h-96 sm:w-96 sm:h-64
+    md:absolute md:right-2 right-2"
+     src="../../assets/images/Groupteam-image.png" alt="">
+  </div>
+</div>
+
+
+<div class="w-[100%] h-44 bg-white text-black text-center flex flex-col">
+    <h4 class="text-[#74C69D] text-xl mt-2">P A R T N E R S </h4>
+    <p class="text-2xl mt-6 font-bold">Lorem ipsum dolor</p>
+    <p class="text-xl font-light">Lorem ipsum, dolor sit amet consectetur</p>
+    <p class="text-xl mt-2 font-light">adipisicing elit.</p>
+
+</div>
+
+<div class="w-[100%] h-max pt-5 pb-5 flex bg-[#ffffff] flex-col
+ gap-y-10 items-center justify-center sm:flex sm:flex-col md:flex md:flex-row md:gap-x-10">
+    <img class="w-24 md:w-28" src="../../assets/images/google.png" alt="">
+    <img class="w-24 md:w-28" src="../../assets/images/microsoft.png" alt="">
+    <img class="w-24 md:w-28" src="../../assets/images/Airbnb.png" alt="">
+    <img class="w-24 md:w-28" src="../../assets/images/facebook.png" alt="">
+    <img class="w-24 md:w-28" src="../../assets/images/spotify.png" alt="">
+</div>
+<div class="flex items-center justify-center p-10">
+  <button class="bg-black text-white h-14 w-40 rounded-md
+   active:bg-[#3f3e3e] hover:bg-[#545454] text-xl">Learn More</button>
+</div>
+
+<div class="w-[100%] h-max bg-[#ffffff]
+flex flex-col items-center md:flex md:flex-row">
+  <img class="w-80 mt-10 md:w-[30rem] md:h-96 md:relative md:bottom-5
+  md:left-20" src="../../assets/images/teamwork-1.png" alt="">
+
+  <div class="w-[100%] md:w-[26rem] md:h-96 p-4 h-max bg-white text-black text-center flex flex-col
+  md:absolute md:right-20 items-center">
+  <p class="mt-2 font-serif text-2xl">Lorem ipsum dolor sit </p>
+  <p class="mt-2 font-serif text-2xl">amet consectetur </p>
+  <p class="mt-2 font-serif text-xl font-light">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+     Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos
+     error ipsum, voluptate culpa nesciunt delectus iste?
+  </p>
+  <button class="bg-black text-white h-14 w-40 rounded-md mt-4">
+    Learn More
+  </button>
+ </div>
+</div>
+
+<div class="w-[100%] h-max bg-[#ffffff]
+flex flex-col items-center md:flex md:flex-row-reverse">
+  <img class="w-80 mt-10 md:w-[30rem] md:h-96 md:relative md:bottom-5
+  md:right-20" src="../../assets/images/teamwork-2.png" alt="">
+
+  <div class="w-[100%] md:w-[26rem] md:h-96 p-4 h-max bg-white text-black text-center flex flex-col
+  md:absolute md:left-20 items-center">
+  <p class="mt-2 font-serif text-2xl">Lorem ipsum dolor sit </p>
+  <p class="mt-2 font-serif text-2xl">amet consectetur </p>
+  <p class="mt-2 font-serif text-xl font-light">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+     Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos
+     error ipsum, voluptate culpa nesciunt delectus iste?
+  </p>
+  <button class="bg-black text-white h-14 w-40 rounded-md mt-4">
+    Learn More
+  </button>
+ </div>
+</div>
+
+<div class="w-[100%] h-44 bg-white text-center">
+  <p class="text-[#74C69D] text-xl">T E A M</p>
+  <p class="font-serif text-3xl mt-2">Our Talents</p>
+  <p class="text-xl mt-4">Lorem ipsum, dolor sit amet consectetur
+    <br>
+    Suscipit nemo hic quos, ab,
+  </p>
+</div>
+
+<div class="w-[100%] bg-whit p-4 h-max flex flex-col items-center
+justify-center gap-y-10 md:gap-x-10  md:flex md:flex-row ">
+    <!-- Team card -->
+    <div class="w-80 h-80 bg-white flex flex-col items-center rounded-xl
+    shadow-sm shadow-slate-500 md:h-[22rem] " *ngFor="let team of teamMembers">
+        <img class="w-48 h-48 md:w-60 md:h-60 mt-5"  src="{{team.profile}}" alt="">
+        <p class="mt-3 text-2xl font-bold md:text-2xl">{{team.name}}</p>
+        <p class="mt-3 text-xl font-light">{{team.position}}</p>
+    </div>
+</div>
+<div class="flex justify-center pb-8">
+  <button class="bg-black text-white h-14 w-40 rounded-md mt-4">
+    View Team
+  </button>
+</div>
